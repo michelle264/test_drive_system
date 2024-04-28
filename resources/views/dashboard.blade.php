@@ -7,8 +7,6 @@
     <div class="container">
         <a class="navbar-brand" href="/">Test Drive System</a>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- <ul class="navbar-nav">
-            </ul> -->
             <ul class="navbar-nav ml-auto"> 
             <li class="nav-item">
                     <a class="nav-link" href="/"><div class='logout'>Logout</div></a>
@@ -43,9 +41,9 @@
                 <th>Email</th>
                 <th>Test Drive Date</th>
                 <th>Test Drive Time</th>
-                <th>Down Payment Amount</th>
+                <th>Down Payment Amount (RM)</th>
                 <th>Purchase Status</th>
-                <th>Loan Amount</th>
+                <th>Loan Amount (RM)</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -143,7 +141,9 @@
            
         }
 
-
+        .btn {
+        margin-bottom: 5px; 
+    }
         </style>
 
 @endsection

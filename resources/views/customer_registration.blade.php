@@ -79,7 +79,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="down_payment">Down Payment Amount</label>
+                            <label for="down_payment">Down Payment Amount (RM)</label>
                             <input type="number" class="form-control" id="down_payment" name="down_payment_amount" required>
                             @error('down_payment_amount')
                                 <div class="alert alert-danger mt-2">{{ $message }}</div>
@@ -98,7 +98,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="loan_amount">Loan Amount</label>
+                            <label for="loan_amount">Loan Amount (RM)</label>
                             <input type="number" class="form-control" id="loan_amount" name="loan_amount" step="0.01">
                             @error('loan_amount')
                                 <div class="alert alert-danger mt-2">{{ $message }}</div>
@@ -125,7 +125,6 @@
             color: white;
             margin-right: 20px;
         }
-
 
         </style>
 @endsection

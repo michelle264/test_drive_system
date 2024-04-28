@@ -37,7 +37,7 @@
                     <input type="email" class="form-control" id="email" name="email" value="{{ $customer->email }}" readonly>
                 </div>
                 <div class="form-group">
-                    <label for="down_payment">Down Payment Amount:</label>
+                    <label for="down_payment">Down Payment Amount (RM):</label>
                     <input type="number" class="form-control" id="down_payment" name="down_payment_amount" value="{{ $customer->down_payment_amount }}">
                 </div>
                 <div class="form-group">
@@ -48,7 +48,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="loan_amount">Loan Amount:</label>
+                    <label for="loan_amount">Loan Amount (RM):</label>
                     <input type="number" class="form-control" id="loan_amount" name="loan_amount" value="{{ $customer->loan_amount }}" readonly>
                 </div>
                 <button type="submit" class="btn btn-primary">Update Information</button>
