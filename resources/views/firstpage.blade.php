@@ -4,29 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Drive System</title>
-    <!-- Bootstrap CSS -->
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Custom CSS for background image */
+        
         body {
             background-image: url('https://wallpapercave.com/wp/wp9192457.jpg'); 
-            background-size: cover;
+            background-size: 100% 100%;
             background-position: center top;
             margin: 0;
             padding: 0;
-            height: 100vh; /* Set height to full viewport height */
-            /* display: flex; */
+            height: 100vh; 
             justify-content: center;
             align-items: center;
-            color: white; /* Set text color to white */
+            color: white; 
         }
-        /* Adjust navbar styles */
+
         .navbar {
-            background-color: #343a40; /* Dark background color */
+            background-color: #343a40; 
         }
-        /* Adjust navbar links styles */
+
         .navbar-brand {
-            color: white; /* Set navbar brand text color to white */
+            color: white; 
         }
         .navbar-nav .nav-link {
             color: white;

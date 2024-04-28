@@ -20,11 +20,11 @@
     </div>
 </nav>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header bg-primary text-white">{{ __('Login Staff') }}</div>
+                    <div class="card-header bg-primary text-white">{{ __('Staff Login') }}</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('loginstaff') }}">
@@ -55,18 +55,6 @@
                                             <strong>{{ $message }}</strong>
                                         </span>
                                     @enderror
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col-md-6 offset-md-4">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                        <label class="form-check-label" for="remember">
-                                            {{ __('Remember Me') }}
-                                        </label>
-                                    </div>
                                 </div>
                             </div>
 

@@ -16,9 +16,10 @@ public function checkEligibility($id)
     {
         // Find the customer by ID
         $customer = Customer::findOrFail($id);
-        // $car_price =200000;
 
-        $isFirstTenCustomer = Customer::count() < 11;
+        $numberOfCustomers = Customer::where('id', '<=', $id)->count();
+
+    $isFirstTenCustomer = $numberOfCustomers <= 10;
 
         // Check eligibility 
         $eligibleForDiscount = false;
@@ -26,7 +27,11 @@ public function checkEligibility($id)
             $eligibleForDiscount = true;
             $message = 'Customer is eligible for a 15% discount.';
         } else {
-            $message = 'Customer is not eligible for the discount.';
+            if (!$isFirstTenCustomer) {
+                $message = 'Sorry, only the first ten customers are eligible for the discount.';
+            } else {
+                $message = 'Customer is not eligible for the discount.';
+            }
         }
     
         return redirect()->back()->with('eligibleForDiscount', $eligibleForDiscount)->with('message', $message);

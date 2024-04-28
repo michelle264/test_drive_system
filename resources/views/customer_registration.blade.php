@@ -14,7 +14,7 @@
             <li class="nav-item">
                     <a class="nav-link" href="/loginstaff">Login as Staff</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link" href="/registerstaff">Register as Staff</a>
                 </li>
             </ul>
