@@ -2,7 +2,7 @@
 1. git clone https://github.com/michelle264/test_drive_system.git or manually download zip project
 2. composer install
 3.To make duplicate of .env.example:   cp .env.example .env
-4. Make the DB_CONNECTION as mysql
+4. Make the DB_CONNECTION in .env as mysql
 5. Go to http://localhost/phpmyadmin/ and create a new database with same name stated in the DB_DATABASE in .env
 6. php artisan key:generate
 7. php artisan migrate
